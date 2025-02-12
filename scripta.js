@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
     playPauseBtn.addEventListener('click', () => {
         if (audio.paused) {
             audio.play();
-            playPauseIcon.src = 'Pause.svg';
+            playPauseIcon.src = 'pause.svg';
         } else {
             audio.pause();
             playPauseIcon.src = 'Play.svg';
