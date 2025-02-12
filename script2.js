@@ -9,7 +9,7 @@ function spawnHeart() {
 
     const heart = document.createElement("div");
     heart.classList.add("heart");
-    heart.textContent = "❤️";
+    heart.textContent = "🥰";
     heart.style.left = `${Math.random() * 90}vw`;
     heart.style.top = `-50px`;
 

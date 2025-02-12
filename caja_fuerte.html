@@ -4,13 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Caja Fuerte de San Valentín</title>
+    <link rel="shortcut icon" href="img/icono.png" type="image/x-icon">
+    <title>FELIZ SAN VALENTIN 🥰</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <!-- Contenedor de la caja fuerte -->
 <div>
+    <p className="text-gray-600 italic" style="text-align: start; color: aliceblue;">*Pista: #dia y #mes que nos robaron</p>
     <div class="container">
         <div class="caja-fuerte">
             <div class="imagen">
@@ -53,75 +55,18 @@
     </div>
 </div>
 
-    <!-- Sección del contador (oculta inicialmente) -->
-    <div id="seccion-contador" class="seccion-contador">
-        <!-- Cabecera -->
-        <div class="cabecera">
-            <img src="./img/tuyo.jpg"
-                alt="" class="imagen-cabecera">
-            <div class="titulo-cabecera">
-                <h1>Nuestro Tiempo Juntos</h1>
-            </div>
-        </div>
-
-        <!-- Contador -->
-        <div class="contador">
-            <!-- Primera línea: Años, Meses, Días -->
-            <div class="linea-tiempo" id="linea-superior">
-                <span id="anos">0</span>AÑOS
-                <span id="meses">0</span>MESES
-            </div>
-
-            <!-- Segunda línea: Horas, Minutos, Segundos -->
-            <div class="linea-tiempo" id="linea-inferior">
-                <div class="unidad-tiempo">
-                    <span id="dias">0</span>
-                    <p>Dias</p>
-                </div>
-
-                <div class="unidad-tiempo">
-                    <span id="horas">0</span>
-                    <p>Horas</p>
-                </div>
-
-                <div class="unidad-tiempo">
-                    <span id="minutos">0</span>
-                    <p>Minutos</p>
-                </div>
-
-                <div class="unidad-tiempo">
-                    <span id="segundos">0</span>
-                    <p>Segundos</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Botón -->
-        <button class="boton-contador" onclick="mostrarGaleria()">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#ffffff"
-                fill="none">
-                <path
-                    d="M19.4626 3.99415C16.7809 2.34923 14.4404 3.01211 13.0344 4.06801C12.4578 4.50096 12.1696 4.71743 12 4.71743C11.8304 4.71743 11.5422 4.50096 10.9656 4.06801C9.55962 3.01211 7.21909 2.34923 4.53744 3.99415C1.01807 6.15294 0.221721 13.2749 8.33953 19.2834C9.88572 20.4278 10.6588 21 12 21C13.3412 21 14.1143 20.4278 15.6605 19.2834C23.7783 13.2749 22.9819 6.15294 19.4626 3.99415Z"
-                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
-            </svg> Tú & Yo <br>[Ver Fotos]
-        </button>
-    </div>
-
     <!-- Sección de la galería de fotos (oculta inicialmente) -->
     <div id="seccion-galeria" class="seccion-galeria">
         <!-- Título de la galería -->
         <div class="titulo-galeria">
-            <h1>Nuestros Recuerdos  </h1>
+            <h1>Momentos Geniales</h1>
         </div>
 
         <!-- Contenedor de las fotos -->
         <div class="fotos">
-            <img src="./img/img1.jpg" alt="Foto 1">
-            <img src="./img/img2.jpg" alt="Foto 2">
-            <img src="./img/img3.jpg" alt="Foto 3">
-            <img src="./img/img4.jpg" alt="Foto 4">
-            <img src="./img/img5.jpg" alt="Foto 5">
-            <img src="./img/tuyo.jpg" alt="Foto 6">
+            <img src="./img/mirador.png" alt="Foto 1">
+            <img src="./img/teleferico.jpg" alt="Foto 2">
+            <img src="./img/pelicula.avif" alt="Foto 3">
         </div>
 
         <!-- Botón para ir a la carta -->
@@ -143,19 +88,6 @@
             </svg>
             Ver Carta
         </button>
-        <!-- Botón para volver -->
-        <button class="boton-transparente boton-contador" onclick="mostrarContador()">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#d1548f"
-                fill="none">
-                <path
-                    d="M12.0027 21C7.28739 21 4.92973 21 3.46487 19.5355C2 18.0711 2 15.714 2 11V7.94427C2 6.1278 2 5.21956 2.38042 4.53806C2.6516 4.05227 3.05255 3.65142 3.53848 3.38032C4.22017 3 5.12865 3 6.94562 3C8.10968 3 8.69172 3 9.20122 3.19101C10.3645 3.62712 10.8442 4.68358 11.3691 5.73313L12.0027 7M8.00163 7H16.754C18.8613 7 19.9149 7 20.6718 7.50559C20.9995 7.72447 21.2808 8.00572 21.4997 8.33329C21.8937 8.92282 21.9808 9.69244 22 11"
-                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
-                <path
-                    d="M20.586 13.331C18.7898 12.3795 17.5 13.7821 17.5 13.7821C17.5 13.7821 16.2102 12.3795 14.4139 13.331C12.2383 14.4834 12.0821 18.9964 17.5 21C22.9179 18.9964 22.7616 14.4834 20.586 13.331Z"
-                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-            </svg>
-            Volver
-        </button>
     </div>
 
     <!-- Sección de la carta (oculta inicialmente) -->
@@ -168,11 +100,11 @@
         <!-- Contenido de la carta -->
         <div class="contenido-carta">
             <p>
-                Ángel mía,<br><br>
-                Este es un mensaje especial para ti. Gracias por ser parte de mi vida y por todos los momentos que hemos
-                compartido juntos. Eres muy importante para mí y quiero que sepas que siempre estaré a tu lado.<br><br>
-                Con todo mi amor,<br>
-                El que nunca te olvida!
+                Jessi,<br><br>
+                Este es un mensaje especial para ti. Gracias por sumar a mi vida y por todos los momentos anecdoticos que hemos
+                compartido juntos. Eres muy importante para mí y quiero que sepas que siempre puedes contar conmigo.<br><br>
+                Con cariño,<br>
+                BJ!
             </p>
         </div>
 

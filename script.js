@@ -1,5 +1,5 @@
 // Contraseña predefinida
-const CONTRASENA = "2812";
+const CONTRASENA = "0130";
 
 // Variable para almacenar la contraseña ingresada
 let contrasenaIngresada = "";
@@ -19,7 +19,7 @@ function agregarNumero(numero) {
 
     if (contrasenaIngresada.length === CONTRASENA.length) {
         if (contrasenaIngresada === CONTRASENA) {
-            mostrarContador();
+            mostrarGaleria();
         } else {
             alert("Contraseña incorrecta. Inténtalo de nuevo.");
             textoCodigo.textContent = 'Contraseña';
@@ -33,7 +33,6 @@ function agregarNumero(numero) {
 function ocultarTodasLasSecciones() {
     const secciones = [
         document.querySelector('.container'),
-        document.getElementById('seccion-contador'),
         document.getElementById('seccion-galeria'),
         document.getElementById('seccion-carta')
     ];
@@ -45,12 +44,6 @@ function ocultarTodasLasSecciones() {
     });
 }
 
-// Función para mostrar el contador
-function mostrarContador() {
-    ocultarTodasLasSecciones();
-    const seccionContador = document.getElementById('seccion-contador');
-    seccionContador.style.display = 'block';
-}
 
 // Función para mostrar la galería de fotos
 function mostrarGaleria() {
